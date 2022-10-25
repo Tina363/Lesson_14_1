@@ -1,0 +1,15 @@
+body {}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  /* flex: 1 1 auto; */
+}
+
+.wrapper>main {
+  flex-grow: 1;
+  background-color: red;
+}
