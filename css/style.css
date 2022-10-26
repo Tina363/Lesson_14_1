@@ -1,4 +1,6 @@
-body {}
+body {
+  background-color: blue;
+}
 
 .wrapper {
   min-height: 100%;
@@ -11,5 +13,235 @@ body {}
 
 .wrapper>main {
   flex-grow: 1;
-  background-color: red;
+
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  min-height: 200px;
+  padding-top: 15px;
+}
+
+.header__list {
+  background-color: brown;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  border-radius: 10px;
+  border: 8px dashed #000;
+  padding: 5px;
+}
+
+.header__item {
+  flex: 0 1 10%;
+  height: 100px;
+  background-color: green;
+  border-radius: 10%;
+  box-shadow: 5px 10px 10px #000;
+}
+
+.header__item:nth-child(1) {
+  animation: light 2s ease 0s infinite alternate both;
+}
+
+.header__item:nth-child(2) {
+  animation: light 2s ease 2.5s infinite alternate both;
+}
+
+.header__item:nth-child(3) {
+  animation: light 2s ease 5s infinite alternate both;
+}
+
+.header__item:nth-child(4) {
+  animation: light 2s ease 7.5s infinite alternate both;
+}
+
+.header__item:nth-child(5) {
+  animation: light 2s ease 0s infinite alternate both;
+}
+
+.header__item:nth-child(6) {
+  animation: light 2s ease 2.5s infinite alternate both;
+}
+
+.header__item:nth-child(7) {
+  animation: light 2s ease 5s infinite alternate both;
+}
+
+.header__item:nth-child(8) {
+  animation: light 2s ease 7.5s infinite alternate both;
+}
+
+@keyframes light {
+  0% {
+    background-color: green;
+  }
+
+  100% {
+    background-color: rgb(56, 68, 37);
+  }
+}
+
+.house {}
+
+.house__items {
+  background-color: chocolate;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.house__flat {}
+
+.flat-house {
+  flex: 1 1 488px;
+  height: 488px;
+  background-color: grey;
+  border-radius: 5px;
+  border: 1px solid #000;
+  display: flex;
+  padding: 20px 50px;
+}
+
+.flat-house_1 {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 488px;
+  gap: 30px;
+
+}
+
+.flat-house_1>.flat-house__window:last-child {
+  margin-bottom: 50px;
+  flex: 0 1 200px;
+  height: 100px;
+}
+
+.flat-house_2 {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.flat-house_2>.flat-house__window:nth-child(1) {
+  order: 2;
+  width: 250px;
+}
+
+.flat-house_2>.flat-house__window:nth-child(2) {
+  order: 1;
+  width: 200px;
+  align-self: flex-end;
+}
+
+.flat-house_2>.flat-house__window:nth-child(3) {
+  order: 3;
+  width: 300px;
+  margin-top: 40px;
+  align-self: center;
+}
+
+.flat-house_3 {
+  align-content: start;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap-reverse;
+}
+
+.flat-house_3>.flat-house__window {
+  flex: 0 1 150px;
+}
+
+.flat-house_3>.flat-house__window:nth-child(3) {
+  flex: 0 1 50px;
+  align-self: center;
+}
+
+.flat-house_4 {
+  justify-content: space-evenly;
+}
+
+.flat-house_4>.flat-house__window:nth-child(2) {
+  flex: 0 1 250px;
+  align-self: center;
+}
+
+.flat-house_5 {
+  padding-bottom: 0;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.flat-house_5>div:nth-child(3) {
+  flex: 1 1 300px;
+  align-self: start;
+}
+
+.flat-house__window {
+  flex: 0 1 100px;
+  height: 200px;
+  background-color: rgb(133, 133, 223);
+  background: linear-gradient(246deg, rgba(42, 112, 189, 1) 61%, rgba(43, 218, 218, 0.037861799993434864) 100%);
+  border-radius: 10px;
+  border: 5px solid #fff;
+}
+
+.flat-house__window:hover {
+  box-shadow: 10px 10px 32px #fff;
+}
+
+.flat-house__door {}
+
+.door {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  width: 300px;
+  height: 100%;
+  gap: 30px;
+}
+
+.door:hover {
+  box-shadow: 10px -10px 32px #fff;
+}
+
+.door__item {
+  flex: 1 1 30px;
+  width: 100%;
+  background-color: yellow;
+  border: 2px solid green;
+
+}
+
+.footer {
+  min-height: 200px;
+  background-color: green;
+  display: flex;
+  align-content: flex-start;
+}
+
+.footer__body {
+  flex: 1 1 auto;
+  height: 30px;
+  background-color: burlywood;
+  position: relative;
+}
+
+.footer__item {
+  position: absolute;
+
 }
