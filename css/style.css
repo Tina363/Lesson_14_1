@@ -10,7 +10,7 @@ body {
   }
 
   100% {
-    background: url("../img/sky-1.jpg") 0 0 no-repeat;
+    background: url("../img/sky-1.jpg") 0 0 / contain no-repeat;
   }
 }
 
@@ -119,7 +119,7 @@ body {
 
 .flat-house {
   flex: 1 1 488px;
-  height: 488px;
+  min-height: 488px;
   background-color: grey;
   border-radius: 5px;
   border: 1px solid #000;
@@ -177,7 +177,7 @@ body {
 }
 
 .flat-house_3>.flat-house__window:nth-child(3) {
-  flex: 0 1 50px;
+  flex: 0 1 350px;
   align-self: center;
 }
 
